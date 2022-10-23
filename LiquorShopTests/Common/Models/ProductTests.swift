@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Nimble
 @testable import LiquorShop
 
 final class ProductTests: XCTestCase {
@@ -16,7 +17,7 @@ final class ProductTests: XCTestCase {
                                        ratingCount: 5.0,
                                        price: [PriceDetail(message: "", value: 123456, isOfferPrice: false)]).priceValue().withDollarSign()
         
-        XCTAssertEqual(actualPriceValue, "$123,456.00", "Expected to get correctly formatted price")
+        expect(actualPriceValue).to(equal("$123,456.00"), description: "Expected to get correctly formatted price")
     }
     
     func testShouldReturnNotAvailableWhenPriceDetailIsEmpty() {
@@ -26,6 +27,6 @@ final class ProductTests: XCTestCase {
                                        ratingCount: 5.0,
                                        price: []).priceValue().withDollarSign()
         
-        XCTAssertEqual(actualPriceValue, "Not available", "Expected to get Not available text for empty Prioce Detail")
+        expect(actualPriceValue).to(equal("Not available"), description: "Expected to get Not available text for empty Prioce Detail")
     }
 }

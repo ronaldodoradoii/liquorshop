@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Nimble
 @testable import LiquorShop
 
 final class PriceValueTests: XCTestCase {
@@ -20,13 +21,13 @@ final class PriceValueTests: XCTestCase {
         
         for expectedValue in expectedValues {
             let actualPriceValue = PriceValue(decimalValue: expectedValue.value).withDollarSign()
-            XCTAssertEqual(actualPriceValue, expectedValue.formatted,"Expected \(expectedValue.formatted) to formatted correctly")
+            expect(actualPriceValue).to(equal(expectedValue.formatted), description: "Expected \(expectedValue.formatted) to formatted correctly")
         }
     }
     
     func testShouldReturnNotAvailableIfValueIsNil() {
         let actualPriceValue = PriceValue(decimalValue: nil).withDollarSign()
         
-        XCTAssertEqual(actualPriceValue, "Not available", "Expected to return Not Available")
+        expect(actualPriceValue).to(equal("Not available"))
     }
 }

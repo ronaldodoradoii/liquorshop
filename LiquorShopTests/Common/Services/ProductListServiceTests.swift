@@ -6,7 +6,9 @@
 //
 
 import XCTest
+import Nimble
 @testable import LiquorShop
+
 
 final class ProductListServiceTest: XCTestCase {
     
@@ -33,7 +35,7 @@ final class ProductListServiceTest: XCTestCase {
 
         let products = try? await productListService.fetchProductList()
 
-        XCTAssertEqual(products, expectedProducts, "Expected product list is fetched and decoded")
+        await expect(products).to(equal(expectedProducts), description: "Expected product list is fetched and decoded")
     }
     
     func testShouldThrowErrorWhenFetchProductListFails() async throws {
@@ -47,7 +49,7 @@ final class ProductListServiceTest: XCTestCase {
             didThrowError = error
         }
 
-        XCTAssert(didThrowError != nil, "Expected to throw an error if response data is invalid")
+        await expect(didThrowError).toNot(beNil(), description: "Expected to throw an error if response data is invalid")
     }
     // TODO: - Missing test should throw when error code is not equal to 200
 }

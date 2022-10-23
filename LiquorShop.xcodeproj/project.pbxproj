@@ -15,7 +15,6 @@
 		7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989192905090200F49A4E /* LiquorShopApp.swift */; };
 		7189891E2905090300F49A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7189891D2905090300F49A4E /* Assets.xcassets */; };
 		718989212905090300F49A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718989202905090300F49A4E /* Preview Assets.xcassets */; };
-		7189892B2905090400F49A4E /* LiquorShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189892A2905090400F49A4E /* LiquorShopTests.swift */; };
 		718989352905090400F49A4E /* LiquorShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989342905090400F49A4E /* LiquorShopUITests.swift */; };
 		718989372905090400F49A4E /* LiquorShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */; };
 		718989502905139D00F49A4E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189894F2905139D00F49A4E /* MainView.swift */; };
@@ -68,7 +67,6 @@
 		7189891D2905090300F49A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		718989202905090300F49A4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		718989262905090400F49A4E /* LiquorShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquorShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7189892A2905090400F49A4E /* LiquorShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopTests.swift; sourceTree = "<group>"; };
 		718989302905090400F49A4E /* LiquorShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquorShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		718989342905090400F49A4E /* LiquorShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopUITests.swift; sourceTree = "<group>"; };
 		718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -176,11 +174,10 @@
 		718989292905090400F49A4E /* LiquorShopTests */ = {
 			isa = PBXGroup;
 			children = (
-				71823D9E2905298B003F3BF2 /* ViewModels */,
 				7189897B2905213200F49A4E /* Builders */,
 				71898966290517CB00F49A4E /* Common */,
 				7189897E2905217900F49A4E /* Mocks */,
-				7189892A2905090400F49A4E /* LiquorShopTests.swift */,
+				71823D9E2905298B003F3BF2 /* ViewModels */,
 			);
 			path = LiquorShopTests;
 			sourceTree = "<group>";
@@ -490,7 +487,6 @@
 				7189897A290520FB00F49A4E /* ProductListServiceTests.swift in Sources */,
 				718989802905218600F49A4E /* MockRequestHandler.swift in Sources */,
 				7189897D2905215000F49A4E /* ProductBuilder.swift in Sources */,
-				7189892B2905090400F49A4E /* LiquorShopTests.swift in Sources */,
 				71823DA0290529A6003F3BF2 /* ProductListViewModelTests.swift in Sources */,
 				7189897429051F5200F49A4E /* ProductsTests.swift in Sources */,
 				71898969290517F200F49A4E /* PriceValueTests.swift in Sources */,
