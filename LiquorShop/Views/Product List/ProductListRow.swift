@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import URLImage
 
 struct ProductListRow: View {
     let title: String
@@ -30,10 +30,18 @@ struct ProductListRow: View {
     var body: some View {
         HStack(spacing: 0) {
             if let imageURL = imageURL {
-                // Async image download in here
+                URLImage(imageURL,
+                         content: { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: CustomSize.productIconImage, height: CustomSize.productIconImage)
+                })
+                .padding(CustomSize.small)
             } else {
                 Color.gray
                     .frame(width: CustomSize.productIconImage, height: CustomSize.productIconImage)
+                    .padding(CustomSize.small)
             }
             
             VStack(alignment: .leading) {
@@ -57,7 +65,7 @@ struct ProductListRow: View {
 #if DEBUG
 struct ProductListRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductListRow(title: "Some product name", price: "$1,000.00", imageURL: URL(string: "https://media.danmurphys.com.au/dmo/product/904960-1.png?impolicy=PROD_SM"), favouriteImageName: "heart", onTapFavourite: { })
+        ProductListRow(title: "Some product name", price: "$1,000.00", imageURL: nil, favouriteImageName: "heart", onTapFavourite: { })
     }
 }
 #endif

@@ -72,7 +72,7 @@ struct ProductsListView_Previews: PreviewProvider {
     static func createProducts() -> [Product] {
         var products = [Product]()
         for i in 1...500 {
-            products.append(try! Product(id: "\(i)",
+            products.append(Product(id: "\(i)",
                                          imageURL: "",
                                          title: "Product \(i)",
                                          ratingCount: 5.0,

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct ProductDetailView: View {
     @StateObject private var viewModel: ProductDetailViewModel
@@ -18,13 +19,20 @@ struct ProductDetailView: View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .center) {
                 if let imageURL = viewModel.imageURL {
-                    // TODO: Add async image downloader here
+                    URLImage(imageURL,
+                             content: { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: CustomSize.productDetailImage, height: CustomSize.productDetailImage, alignment: .center)
+                    })
                 } else {
                     Color.gray
                         .frame(width: CustomSize.productDetailImage, height: CustomSize.productDetailImage)
                 }
             }
             .frame(maxWidth: .infinity)
+            .padding(.bottom, CustomSize.large)
             
             Text(viewModel.productTitle)
                 .padding(.bottom, CustomSize.medium)

@@ -13,6 +13,8 @@
 		71823DA0290529A6003F3BF2 /* ProductListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71823D9F290529A6003F3BF2 /* ProductListViewModelTests.swift */; };
 		71823DA329052DD8003F3BF2 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 71823DA229052DD8003F3BF2 /* Nimble */; };
 		71823DA529053452003F3BF2 /* ProductDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71823DA429053452003F3BF2 /* ProductDetailViewModelTests.swift */; };
+		71823DA8290534C5003F3BF2 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 71823DA7290534C5003F3BF2 /* URLImage */; };
+		71823DAA290534C5003F3BF2 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 71823DA9290534C5003F3BF2 /* URLImageStore */; };
 		7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989192905090200F49A4E /* LiquorShopApp.swift */; };
 		7189891E2905090300F49A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7189891D2905090300F49A4E /* Assets.xcassets */; };
 		718989212905090300F49A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718989202905090300F49A4E /* Preview Assets.xcassets */; };
@@ -103,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71823DAA290534C5003F3BF2 /* URLImageStore in Frameworks */,
+				71823DA8290534C5003F3BF2 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +347,10 @@
 			dependencies = (
 			);
 			name = LiquorShop;
+			packageProductDependencies = (
+				71823DA7290534C5003F3BF2 /* URLImage */,
+				71823DA9290534C5003F3BF2 /* URLImageStore */,
+			);
 			productName = LiquorShop;
 			productReference = 718989162905090200F49A4E /* LiquorShop.app */;
 			productType = "com.apple.product-type.application";
@@ -420,6 +428,7 @@
 			mainGroup = 7189890D2905090200F49A4E;
 			packageReferences = (
 				71823DA129052DD8003F3BF2 /* XCRemoteSwiftPackageReference "Nimble" */,
+				71823DA6290534C5003F3BF2 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = 718989172905090200F49A4E /* Products */;
 			projectDirPath = "";
@@ -817,6 +826,14 @@
 				kind = branch;
 			};
 		};
+		71823DA6290534C5003F3BF2 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -824,6 +841,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 71823DA129052DD8003F3BF2 /* XCRemoteSwiftPackageReference "Nimble" */;
 			productName = Nimble;
+		};
+		71823DA7290534C5003F3BF2 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71823DA6290534C5003F3BF2 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		71823DA9290534C5003F3BF2 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71823DA6290534C5003F3BF2 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

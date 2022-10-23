@@ -26,6 +26,15 @@
         "branch" : "main",
         "revision" : "4e2015ae9c4636ed54463a5000094af23fa92524"
       }
+    },
+    {
+      "identity" : "url-image",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dmytro-anokhin/url-image",
+      "state" : {
+        "branch" : "main",
+        "revision" : "20abda498bf8fe78631b1057b77078147598962b"
+      }
     }
   ],
   "version" : 2
