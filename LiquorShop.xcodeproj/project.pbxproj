@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989192905090200F49A4E /* LiquorShopApp.swift */; };
-		7189891C2905090200F49A4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189891B2905090200F49A4E /* ContentView.swift */; };
 		7189891E2905090300F49A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7189891D2905090300F49A4E /* Assets.xcassets */; };
 		718989212905090300F49A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718989202905090300F49A4E /* Preview Assets.xcassets */; };
 		7189892B2905090400F49A4E /* LiquorShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189892A2905090400F49A4E /* LiquorShopTests.swift */; };
 		718989352905090400F49A4E /* LiquorShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989342905090400F49A4E /* LiquorShopUITests.swift */; };
 		718989372905090400F49A4E /* LiquorShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */; };
+		718989502905139D00F49A4E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189894F2905139D00F49A4E /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		718989162905090200F49A4E /* LiquorShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquorShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718989192905090200F49A4E /* LiquorShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopApp.swift; sourceTree = "<group>"; };
-		7189891B2905090200F49A4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7189891D2905090300F49A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		718989202905090300F49A4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		718989262905090400F49A4E /* LiquorShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquorShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		7189894629050E2C00F49A4E /* unit-test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "unit-test.xctestplan"; sourceTree = "<group>"; };
 		7189894729050E4B00F49A4E /* ui-test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ui-test.xctestplan"; sourceTree = "<group>"; };
 		7189894929050E8600F49A4E /* all-test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "all-test.xctestplan"; sourceTree = "<group>"; };
+		7189894F2905139D00F49A4E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				7189891F2905090300F49A4E /* Preview Content */,
+				7189894E2905137700F49A4E /* Views */,
 				7189891D2905090300F49A4E /* Assets.xcassets */,
-				7189891B2905090200F49A4E /* ContentView.swift */,
 				718989192905090200F49A4E /* LiquorShopApp.swift */,
 			);
 			path = LiquorShop;
@@ -139,6 +139,14 @@
 				7189894629050E2C00F49A4E /* unit-test.xctestplan */,
 			);
 			path = "Test Plans";
+			sourceTree = "<group>";
+		};
+		7189894E2905137700F49A4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7189894F2905139D00F49A4E /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7189891C2905090200F49A4E /* ContentView.swift in Sources */,
+				718989502905139D00F49A4E /* MainView.swift in Sources */,
 				7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
