@@ -10,9 +10,12 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            Color.blue
+            let productListViewModel = ProductListViewModel(favouritesStore: FavouritesStore.shared,
+                                                            navigationTitle: "Product List",
+                                                            favouritesFilterOn: false)
+            ProductListView(viewModel: productListViewModel, favouritesStore: FavouritesStore.shared)
                 .tabItem {
-                    Label("Products", systemImage: "list.dash")
+                    Label("List", systemImage: "list.dash")
                 }
             Color.green
                 .tabItem {

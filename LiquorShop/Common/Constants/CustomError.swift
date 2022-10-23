@@ -10,5 +10,5 @@ import Foundation
 enum CustomError: Error {
     case invalidPrice
     case invalidEndpoint
-    case unexpected(code: Int)
+    case networkError
 }
