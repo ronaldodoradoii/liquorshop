@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71823D992905268D003F3BF2 /* FavouritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71823D982905268D003F3BF2 /* FavouritesStore.swift */; };
 		7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989192905090200F49A4E /* LiquorShopApp.swift */; };
 		7189891E2905090300F49A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7189891D2905090300F49A4E /* Assets.xcassets */; };
 		718989212905090300F49A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718989202905090300F49A4E /* Preview Assets.xcassets */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71823D982905268D003F3BF2 /* FavouritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesStore.swift; sourceTree = "<group>"; };
 		718989162905090200F49A4E /* LiquorShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquorShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718989192905090200F49A4E /* LiquorShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopApp.swift; sourceTree = "<group>"; };
 		7189891D2905090300F49A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		718989752905206B00F49A4E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				71823D982905268D003F3BF2 /* FavouritesStore.swift */,
 				718989762905208E00F49A4E /* ProductListService.swift */,
 			);
 			path = Services;
@@ -437,6 +440,7 @@
 			files = (
 				71898952290514F600F49A4E /* ProductListView.swift in Sources */,
 				7189895D290516B500F49A4E /* ProductDetailView.swift in Sources */,
+				71823D992905268D003F3BF2 /* FavouritesStore.swift in Sources */,
 				718989502905139D00F49A4E /* MainView.swift in Sources */,
 				71898965290517B200F49A4E /* PriceValue.swift in Sources */,
 				718989552905159300F49A4E /* ProductListViewModel.swift in Sources */,
