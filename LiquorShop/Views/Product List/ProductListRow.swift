@@ -31,13 +31,18 @@ struct ProductListRow: View {
     var body: some View {
         HStack(spacing: 0) {
             if let imageURL = imageURL {
-                URLImage(imageURL,
-                         content: { image in
+                URLImage(imageURL) {
+                    placeHolder(.white)
+                } inProgress: { progress in
+                    placeHolder(.white)
+                } failure: { error, retry in
+                    placeHolder(.gray)
+                } content: { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: CustomSize.productIconImage, height: CustomSize.productIconImage)
-                })
+                }
                 .padding(CustomSize.small)
             } else {
                 Color.gray
@@ -81,6 +86,13 @@ struct ProductListRow: View {
                 message: Text("Message")
             )
         }
+    }
+    
+    @ViewBuilder
+    func placeHolder(_ color:Color) -> some View {
+        color
+            .frame(width: CustomSize.productIconImage, height: CustomSize.productIconImage)
+            .padding(CustomSize.small)
     }
 }
 
