@@ -35,7 +35,13 @@ struct ProductListView: View {
                                                favouriteImageName: viewModel.systemImageName(for: product)) {
                                     viewModel.toggleFavourite(for: product)
                                 }
-                                let productDetailViewModel = ProductDetailViewModel()
+                                let productDetailViewModel = ProductDetailViewModel(favouritesStore: favouritesStore,
+                                                                                    id: product.id,
+                                                                                    productTitle: product.title,
+                                                                                    price: product.priceValue().withDollarSign(),
+                                                                                    ratingCount: product.ratingCount,
+                                                                                    imageURL: URL(string: product.imageURL),
+                                                                                    delegate: viewModel)
                                 let destination = ProductDetailView(viewModel: productDetailViewModel)
                                 NavigationLink(destination: destination) {
                                     EmptyView()

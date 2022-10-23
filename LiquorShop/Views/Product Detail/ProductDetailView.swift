@@ -9,18 +9,70 @@ import SwiftUI
 
 struct ProductDetailView: View {
     @StateObject private var viewModel: ProductDetailViewModel
-    
+
     init(viewModel: ProductDetailViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .center) {
+                if let imageURL = viewModel.imageURL {
+                    // TODO: Add async image downloader here
+                } else {
+                    Color.gray
+                        .frame(width: CustomSize.productDetailImage, height: CustomSize.productDetailImage)
+                }
+            }
+            .frame(maxWidth: .infinity)
+            
+            Text(viewModel.productTitle)
+                .padding(.bottom, CustomSize.medium)
+            Text(viewModel.price)
+                .padding(.bottom, CustomSize.medium)
+            Text("\(NSDecimalNumber(decimal: viewModel.ratingCount))")
+            Spacer()
+            Button(action: {
+                viewModel.toggleFavourites()
+            }, label: {
+                HStack {
+                    Text("Add to favouriites")
+                        .font(.system(size: CustomSize.buttonFontSize))
+                        .foregroundColor(.white)
+                    Spacer()
+                    Image(systemName: viewModel.favouriteImage)
+                        .font(.system(size: CustomSize.buttonFontSize))
+                        .foregroundColor(.white)
+                }
+                .padding(.horizontal, CustomSize.large)
+                .padding(.vertical, CustomSize.medium)
+            })
+            .background(Color.orange)
+            .cornerRadius(CustomSize.buttonCornerRadius)
+            .frame(maxWidth: .infinity, idealHeight: 80
+            )
+            Spacer().frame(maxHeight: CustomSize.spaceFromBottomEdge)
+        }
+        .navigationTitle("Product Detail")
+        .padding(CustomSize.large)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .onAppear {
+            viewModel.refresh()
+        }
     }
 }
 
+#if DEBUG
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView(viewModel: ProductDetailViewModel())
+        let viewModel = ProductDetailViewModel(favouritesStore: FavouritesStoreStub(),
+                                               id: "1",
+                                               productTitle: "Some product name",
+                                               price: "$123.40",
+                                               ratingCount: 5.0,
+                                               imageURL: nil)
+        ProductDetailView(viewModel: viewModel)
     }
 }
+#endif
+

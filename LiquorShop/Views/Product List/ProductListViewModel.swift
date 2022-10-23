@@ -63,3 +63,10 @@ class ProductListViewModel: ObservableObject {
         isListEmpty = products.isEmpty
     }
 }
+
+// MARK: - ProductDetailViewModelDelegate
+extension ProductListViewModel: ProductDetailViewModelDelegate {
+    func didUpdateProduct(id: String) {
+        refreshProducts()
+    }
+}
