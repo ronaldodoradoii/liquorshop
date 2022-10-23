@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989192905090200F49A4E /* LiquorShopApp.swift */; };
+		7189891C2905090200F49A4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189891B2905090200F49A4E /* ContentView.swift */; };
+		7189891E2905090300F49A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7189891D2905090300F49A4E /* Assets.xcassets */; };
+		718989212905090300F49A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718989202905090300F49A4E /* Preview Assets.xcassets */; };
+		7189892B2905090400F49A4E /* LiquorShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189892A2905090400F49A4E /* LiquorShopTests.swift */; };
+		718989352905090400F49A4E /* LiquorShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989342905090400F49A4E /* LiquorShopUITests.swift */; };
+		718989372905090400F49A4E /* LiquorShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		718989272905090400F49A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7189890E2905090200F49A4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718989152905090200F49A4E;
+			remoteInfo = LiquorShop;
+		};
+		718989312905090400F49A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7189890E2905090200F49A4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718989152905090200F49A4E;
+			remoteInfo = LiquorShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		718989162905090200F49A4E /* LiquorShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquorShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		718989192905090200F49A4E /* LiquorShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopApp.swift; sourceTree = "<group>"; };
+		7189891B2905090200F49A4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7189891D2905090300F49A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		718989202905090300F49A4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		718989262905090400F49A4E /* LiquorShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquorShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7189892A2905090400F49A4E /* LiquorShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopTests.swift; sourceTree = "<group>"; };
+		718989302905090400F49A4E /* LiquorShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquorShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		718989342905090400F49A4E /* LiquorShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopUITests.swift; sourceTree = "<group>"; };
+		718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		718989132905090200F49A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718989232905090400F49A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7189892D2905090400F49A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7189890D2905090200F49A4E = {
+			isa = PBXGroup;
+			children = (
+				718989182905090200F49A4E /* LiquorShop */,
+				718989292905090400F49A4E /* LiquorShopTests */,
+				718989332905090400F49A4E /* LiquorShopUITests */,
+				718989172905090200F49A4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		718989172905090200F49A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				718989162905090200F49A4E /* LiquorShop.app */,
+				718989262905090400F49A4E /* LiquorShopTests.xctest */,
+				718989302905090400F49A4E /* LiquorShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		718989182905090200F49A4E /* LiquorShop */ = {
+			isa = PBXGroup;
+			children = (
+				718989192905090200F49A4E /* LiquorShopApp.swift */,
+				7189891B2905090200F49A4E /* ContentView.swift */,
+				7189891D2905090300F49A4E /* Assets.xcassets */,
+				7189891F2905090300F49A4E /* Preview Content */,
+			);
+			path = LiquorShop;
+			sourceTree = "<group>";
+		};
+		7189891F2905090300F49A4E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				718989202905090300F49A4E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		718989292905090400F49A4E /* LiquorShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				7189892A2905090400F49A4E /* LiquorShopTests.swift */,
+			);
+			path = LiquorShopTests;
+			sourceTree = "<group>";
+		};
+		718989332905090400F49A4E /* LiquorShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				718989342905090400F49A4E /* LiquorShopUITests.swift */,
+				718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */,
+			);
+			path = LiquorShopUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		718989152905090200F49A4E /* LiquorShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7189893A2905090400F49A4E /* Build configuration list for PBXNativeTarget "LiquorShop" */;
+			buildPhases = (
+				718989122905090200F49A4E /* Sources */,
+				718989132905090200F49A4E /* Frameworks */,
+				718989142905090200F49A4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiquorShop;
+			productName = LiquorShop;
+			productReference = 718989162905090200F49A4E /* LiquorShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		718989252905090400F49A4E /* LiquorShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7189893D2905090400F49A4E /* Build configuration list for PBXNativeTarget "LiquorShopTests" */;
+			buildPhases = (
+				718989222905090400F49A4E /* Sources */,
+				718989232905090400F49A4E /* Frameworks */,
+				718989242905090400F49A4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718989282905090400F49A4E /* PBXTargetDependency */,
+			);
+			name = LiquorShopTests;
+			productName = LiquorShopTests;
+			productReference = 718989262905090400F49A4E /* LiquorShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7189892F2905090400F49A4E /* LiquorShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718989402905090400F49A4E /* Build configuration list for PBXNativeTarget "LiquorShopUITests" */;
+			buildPhases = (
+				7189892C2905090400F49A4E /* Sources */,
+				7189892D2905090400F49A4E /* Frameworks */,
+				7189892E2905090400F49A4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718989322905090400F49A4E /* PBXTargetDependency */,
+			);
+			name = LiquorShopUITests;
+			productName = LiquorShopUITests;
+			productReference = 718989302905090400F49A4E /* LiquorShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7189890E2905090200F49A4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					718989152905090200F49A4E = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					718989252905090400F49A4E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 718989152905090200F49A4E;
+					};
+					7189892F2905090400F49A4E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 718989152905090200F49A4E;
+					};
+				};
+			};
+			buildConfigurationList = 718989112905090200F49A4E /* Build configuration list for PBXProject "LiquorShop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7189890D2905090200F49A4E;
+			productRefGroup = 718989172905090200F49A4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				718989152905090200F49A4E /* LiquorShop */,
+				718989252905090400F49A4E /* LiquorShopTests */,
+				7189892F2905090400F49A4E /* LiquorShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		718989142905090200F49A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718989212905090300F49A4E /* Preview Assets.xcassets in Resources */,
+				7189891E2905090300F49A4E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718989242905090400F49A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7189892E2905090400F49A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		718989122905090200F49A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7189891C2905090200F49A4E /* ContentView.swift in Sources */,
+				7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718989222905090400F49A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7189892B2905090400F49A4E /* LiquorShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7189892C2905090400F49A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718989372905090400F49A4E /* LiquorShopUITestsLaunchTests.swift in Sources */,
+				718989352905090400F49A4E /* LiquorShopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		718989282905090400F49A4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718989152905090200F49A4E /* LiquorShop */;
+			targetProxy = 718989272905090400F49A4E /* PBXContainerItemProxy */;
+		};
+		718989322905090400F49A4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718989152905090200F49A4E /* LiquorShop */;
+			targetProxy = 718989312905090400F49A4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		718989382905090400F49A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		718989392905090400F49A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7189893B2905090400F49A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LiquorShop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dorado.ronaldo.LiquorShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7189893C2905090400F49A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LiquorShop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dorado.ronaldo.LiquorShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7189893E2905090400F49A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dorado.ronaldo.LiquorShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiquorShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiquorShop";
+			};
+			name = Debug;
+		};
+		7189893F2905090400F49A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dorado.ronaldo.LiquorShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiquorShop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiquorShop";
+			};
+			name = Release;
+		};
+		718989412905090400F49A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dorado.ronaldo.LiquorShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiquorShop;
+			};
+			name = Debug;
+		};
+		718989422905090400F49A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dorado.ronaldo.LiquorShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiquorShop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		718989112905090200F49A4E /* Build configuration list for PBXProject "LiquorShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718989382905090400F49A4E /* Debug */,
+				718989392905090400F49A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7189893A2905090400F49A4E /* Build configuration list for PBXNativeTarget "LiquorShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7189893B2905090400F49A4E /* Debug */,
+				7189893C2905090400F49A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7189893D2905090400F49A4E /* Build configuration list for PBXNativeTarget "LiquorShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7189893E2905090400F49A4E /* Debug */,
+				7189893F2905090400F49A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718989402905090400F49A4E /* Build configuration list for PBXNativeTarget "LiquorShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718989412905090400F49A4E /* Debug */,
+				718989422905090400F49A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7189890E2905090200F49A4E /* Project object */;
+}
