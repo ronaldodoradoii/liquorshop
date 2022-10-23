@@ -28,6 +28,12 @@
 		7189897029051CEE00F49A4E /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189896F29051CEE00F49A4E /* Products.swift */; };
 		7189897229051D4800F49A4E /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189897129051D4800F49A4E /* ProductTests.swift */; };
 		7189897429051F5200F49A4E /* ProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189897329051F5200F49A4E /* ProductsTests.swift */; };
+		718989772905208E00F49A4E /* ProductListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989762905208E00F49A4E /* ProductListService.swift */; };
+		7189897A290520FB00F49A4E /* ProductListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898979290520FB00F49A4E /* ProductListServiceTests.swift */; };
+		7189897D2905215000F49A4E /* ProductBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189897C2905215000F49A4E /* ProductBuilder.swift */; };
+		718989802905218600F49A4E /* MockRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189897F2905218600F49A4E /* MockRequestHandler.swift */; };
+		71898982290521A900F49A4E /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898981290521A900F49A4E /* MockURLProtocol.swift */; };
+		71898984290521CC00F49A4E /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898983290521CC00F49A4E /* ApiResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,12 @@
 		7189896F29051CEE00F49A4E /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		7189897129051D4800F49A4E /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		7189897329051F5200F49A4E /* ProductsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTests.swift; sourceTree = "<group>"; };
+		718989762905208E00F49A4E /* ProductListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListService.swift; sourceTree = "<group>"; };
+		71898979290520FB00F49A4E /* ProductListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListServiceTests.swift; sourceTree = "<group>"; };
+		7189897C2905215000F49A4E /* ProductBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBuilder.swift; sourceTree = "<group>"; };
+		7189897F2905218600F49A4E /* MockRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestHandler.swift; sourceTree = "<group>"; };
+		71898981290521A900F49A4E /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		71898983290521CC00F49A4E /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +158,9 @@
 		718989292905090400F49A4E /* LiquorShopTests */ = {
 			isa = PBXGroup;
 			children = (
+				7189897B2905213200F49A4E /* Builders */,
 				71898966290517CB00F49A4E /* Common */,
+				7189897E2905217900F49A4E /* Mocks */,
 				7189892A2905090400F49A4E /* LiquorShopTests.swift */,
 			);
 			path = LiquorShopTests;
@@ -214,6 +228,7 @@
 			children = (
 				7189896C29051C9000F49A4E /* Constants */,
 				718989612905177000F49A4E /* Models */,
+				718989752905206B00F49A4E /* Services */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -233,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				71898967290517D300F49A4E /* Models */,
+				71898978290520EB00F49A4E /* Services */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -253,6 +269,40 @@
 				7189896D29051C9D00F49A4E /* CustomError.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		718989752905206B00F49A4E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				718989762905208E00F49A4E /* ProductListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		71898978290520EB00F49A4E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				71898979290520FB00F49A4E /* ProductListServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7189897B2905213200F49A4E /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				7189897C2905215000F49A4E /* ProductBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		7189897E2905217900F49A4E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				71898983290521CC00F49A4E /* ApiResponse.swift */,
+				7189897F2905218600F49A4E /* MockRequestHandler.swift */,
+				71898981290521A900F49A4E /* MockURLProtocol.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +444,7 @@
 				7189896B29051C2800F49A4E /* Product.swift in Sources */,
 				7189897029051CEE00F49A4E /* Products.swift in Sources */,
 				718989582905163400F49A4E /* FavouritesViewModel.swift in Sources */,
+				718989772905208E00F49A4E /* ProductListService.swift in Sources */,
 				718989632905178A00F49A4E /* PriceDetail.swift in Sources */,
 				7189895A2905166C00F49A4E /* FavouritesView.swift in Sources */,
 				7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */,
@@ -405,10 +456,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7189897A290520FB00F49A4E /* ProductListServiceTests.swift in Sources */,
+				718989802905218600F49A4E /* MockRequestHandler.swift in Sources */,
+				7189897D2905215000F49A4E /* ProductBuilder.swift in Sources */,
 				7189892B2905090400F49A4E /* LiquorShopTests.swift in Sources */,
 				7189897429051F5200F49A4E /* ProductsTests.swift in Sources */,
 				71898969290517F200F49A4E /* PriceValueTests.swift in Sources */,
 				7189897229051D4800F49A4E /* ProductTests.swift in Sources */,
+				71898982290521A900F49A4E /* MockURLProtocol.swift in Sources */,
+				71898984290521CC00F49A4E /* ApiResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
