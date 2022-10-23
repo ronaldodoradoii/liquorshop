@@ -25,7 +25,9 @@ struct ProductListView: View {
                 if let _ = viewModel.errorOccured {
                     Text("Error loading the page")
                 } else if viewModel.isLoading {
-                    Text("Loading...")
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .blue))
+                        .scaleEffect(1.5, anchor: .center)
                 } else if viewModel.isListEmpty {
                     Text("No products found")
                 } else {
