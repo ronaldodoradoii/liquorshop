@@ -10,7 +10,7 @@ import URLImage
 
 struct ProductDetailView: View {
     @StateObject private var viewModel: ProductDetailViewModel
-
+    
     init(viewModel: ProductDetailViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
     }
@@ -38,16 +38,26 @@ struct ProductDetailView: View {
                 .font(Font.title3.weight(.semibold))
                 .padding(.bottom, CustomSize.medium)
             Text(viewModel.price)
-                .foregroundColor(.gray)
+                .font(Font.headline.weight(.regular))
                 .padding(.bottom, CustomSize.medium)
-            Text("\(NSDecimalNumber(decimal: viewModel.ratingCount))")
+            HStack {
+                ForEach(1...NSDecimalNumber(decimal: viewModel.ratingCount).intValue, id: \.self) {number in
+                    Image(systemName: "star.fill")
+                        .font(.system(size: CustomSize.buttonFontSize))
+                        .foregroundColor(.blue)
+                }
+            }
+            .padding(.bottom, CustomSize.smaller)
+            Text("Rating: \(NSDecimalNumber(decimal: viewModel.ratingCount))")
+                .font(Font.callout.weight(.regular))
+                .foregroundColor(.gray)
             Spacer()
             Button(action: {
                 viewModel.toggleFavourites()
             }, label: {
                 HStack {
                     Text("Add to favouriites")
-                        .font(.system(size: CustomSize.buttonFontSize))
+                        .font(Font.title3.weight(.semibold))
                         .foregroundColor(.white)
                     Spacer()
                     Image(systemName: viewModel.favouriteImage)
@@ -59,8 +69,7 @@ struct ProductDetailView: View {
             })
             .background(Color.blue)
             .cornerRadius(CustomSize.buttonCornerRadius)
-            .frame(maxWidth: .infinity, idealHeight: 80
-            )
+            .frame(maxWidth: .infinity, idealHeight: 80)
             Spacer().frame(maxHeight: CustomSize.spaceFromBottomEdge)
         }
         .navigationTitle("Product Detail")
