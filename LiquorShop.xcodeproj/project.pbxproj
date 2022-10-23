@@ -14,6 +14,12 @@
 		718989352905090400F49A4E /* LiquorShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989342905090400F49A4E /* LiquorShopUITests.swift */; };
 		718989372905090400F49A4E /* LiquorShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */; };
 		718989502905139D00F49A4E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189894F2905139D00F49A4E /* MainView.swift */; };
+		71898952290514F600F49A4E /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898951290514F600F49A4E /* ProductListView.swift */; };
+		718989552905159300F49A4E /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989542905159300F49A4E /* ProductListViewModel.swift */; };
+		718989582905163400F49A4E /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989572905163400F49A4E /* FavouritesViewModel.swift */; };
+		7189895A2905166C00F49A4E /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989592905166C00F49A4E /* FavouritesView.swift */; };
+		7189895D290516B500F49A4E /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189895C290516B500F49A4E /* ProductDetailView.swift */; };
+		7189895F290516C300F49A4E /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189895E290516C300F49A4E /* ProductDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		7189894729050E4B00F49A4E /* ui-test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ui-test.xctestplan"; sourceTree = "<group>"; };
 		7189894929050E8600F49A4E /* all-test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "all-test.xctestplan"; sourceTree = "<group>"; };
 		7189894F2905139D00F49A4E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		71898951290514F600F49A4E /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		718989542905159300F49A4E /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		718989572905163400F49A4E /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
+		718989592905166C00F49A4E /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		7189895C290516B500F49A4E /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		7189895E290516C300F49A4E /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +156,39 @@
 		7189894E2905137700F49A4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				718989562905161F00F49A4E /* Favourites */,
+				7189895B2905169A00F49A4E /* Product Detail */,
+				718989532905150A00F49A4E /* Product List */,
 				7189894F2905139D00F49A4E /* MainView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		718989532905150A00F49A4E /* Product List */ = {
+			isa = PBXGroup;
+			children = (
+				71898951290514F600F49A4E /* ProductListView.swift */,
+				718989542905159300F49A4E /* ProductListViewModel.swift */,
+			);
+			path = "Product List";
+			sourceTree = "<group>";
+		};
+		718989562905161F00F49A4E /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				718989592905166C00F49A4E /* FavouritesView.swift */,
+				718989572905163400F49A4E /* FavouritesViewModel.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		7189895B2905169A00F49A4E /* Product Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7189895C290516B500F49A4E /* ProductDetailView.swift */,
+				7189895E290516C300F49A4E /* ProductDetailViewModel.swift */,
+			);
+			path = "Product Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71898952290514F600F49A4E /* ProductListView.swift in Sources */,
+				7189895D290516B500F49A4E /* ProductDetailView.swift in Sources */,
 				718989502905139D00F49A4E /* MainView.swift in Sources */,
+				718989552905159300F49A4E /* ProductListViewModel.swift in Sources */,
+				718989582905163400F49A4E /* FavouritesViewModel.swift in Sources */,
+				7189895A2905166C00F49A4E /* FavouritesView.swift in Sources */,
 				7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */,
+				7189895F290516C300F49A4E /* ProductDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
