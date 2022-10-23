@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "5058DB63-AFD4-41E1-8963-D245FDB21D6C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:LiquorShop.xcodeproj",
+        "identifier" : "7189892F2905090400F49A4E",
+        "name" : "LiquorShopUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

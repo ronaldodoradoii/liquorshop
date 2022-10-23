@@ -1,1 +1,4 @@
 vendor
+fastlane/test_output
+report.xml
+/LiquorShop.xcodeproj/xcuserdata

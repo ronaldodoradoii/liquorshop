@@ -44,6 +44,9 @@
 		718989302905090400F49A4E /* LiquorShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquorShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		718989342905090400F49A4E /* LiquorShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopUITests.swift; sourceTree = "<group>"; };
 		718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7189894629050E2C00F49A4E /* unit-test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "unit-test.xctestplan"; sourceTree = "<group>"; };
+		7189894729050E4B00F49A4E /* ui-test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ui-test.xctestplan"; sourceTree = "<group>"; };
+		7189894929050E8600F49A4E /* all-test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "all-test.xctestplan"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 				718989292905090400F49A4E /* LiquorShopTests */,
 				718989332905090400F49A4E /* LiquorShopUITests */,
 				718989172905090200F49A4E /* Products */,
+				7189894429050DC200F49A4E /* Test Plans */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +98,10 @@
 		718989182905090200F49A4E /* LiquorShop */ = {
 			isa = PBXGroup;
 			children = (
-				718989192905090200F49A4E /* LiquorShopApp.swift */,
-				7189891B2905090200F49A4E /* ContentView.swift */,
-				7189891D2905090300F49A4E /* Assets.xcassets */,
 				7189891F2905090300F49A4E /* Preview Content */,
+				7189891D2905090300F49A4E /* Assets.xcassets */,
+				7189891B2905090200F49A4E /* ContentView.swift */,
+				718989192905090200F49A4E /* LiquorShopApp.swift */,
 			);
 			path = LiquorShop;
 			sourceTree = "<group>";
@@ -125,6 +129,16 @@
 				718989362905090400F49A4E /* LiquorShopUITestsLaunchTests.swift */,
 			);
 			path = LiquorShopUITests;
+			sourceTree = "<group>";
+		};
+		7189894429050DC200F49A4E /* Test Plans */ = {
+			isa = PBXGroup;
+			children = (
+				7189894929050E8600F49A4E /* all-test.xctestplan */,
+				7189894729050E4B00F49A4E /* ui-test.xctestplan */,
+				7189894629050E2C00F49A4E /* unit-test.xctestplan */,
+			);
+			path = "Test Plans";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

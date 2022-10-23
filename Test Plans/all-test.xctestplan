@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "62A28864-717B-48E1-85E9-36297026449A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:LiquorShop.xcodeproj",
+        "identifier" : "718989252905090400F49A4E",
+        "name" : "LiquorShopTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:LiquorShop.xcodeproj",
+        "identifier" : "7189892F2905090400F49A4E",
+        "name" : "LiquorShopUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
