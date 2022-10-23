@@ -75,10 +75,11 @@ struct ProductListRow: View {
         }
         .padding(.horizontal, CustomSize.small)
         .padding(.vertical, CustomSize.zero)
-        .alert("Added to cart", isPresented: $showingAlert) {
-            Button("OK") {
-                showingAlert = false
-            }
+        .alert(isPresented: $showingAlert) {
+            Alert(
+                title: Text("Added to cart"),
+                message: Text("Message")
+            )
         }
     }
 }

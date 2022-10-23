@@ -22,7 +22,7 @@ struct CustomSize {
     static let iconFavourite: CGFloat = 25.0
     static let iconAddToCart: CGFloat = 20.0
     static let iconTappableArea: CGFloat = 44.0
-    static let productIconImage: CGFloat = 50.0
+    static let productIconImage: CGFloat = 55.0
     static let productDetailImage: CGFloat = 200.0
     static let buttonFontSize: CGFloat = 24.0
 }

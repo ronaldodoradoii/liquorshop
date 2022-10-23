@@ -32,11 +32,11 @@ struct FavouritesView_Previews: PreviewProvider {
     static func createProducts() -> [Product] {
         var products = [Product]()
         for i in 1...500 {
-            products.append(try! Product(id: "\(i)",
-                                         imageURL: "",
-                                         title: "Product \(i)",
-                                         ratingCount: 5.0,
-                                         price: [PriceDetail(message: "On sale", value: Decimal(10 + i), isOfferPrice: true)]))
+            products.append(Product(id: "\(i)",
+                                    imageURL: "",
+                                    title: "Product \(i)",
+                                    ratingCount: 5.0,
+                                    price: [PriceDetail(message: "On sale", value: Decimal(10 + i), isOfferPrice: true)]))
         }
         return products
     }
