@@ -20,6 +20,14 @@
 		7189895A2905166C00F49A4E /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989592905166C00F49A4E /* FavouritesView.swift */; };
 		7189895D290516B500F49A4E /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189895C290516B500F49A4E /* ProductDetailView.swift */; };
 		7189895F290516C300F49A4E /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189895E290516C300F49A4E /* ProductDetailViewModel.swift */; };
+		718989632905178A00F49A4E /* PriceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989622905178A00F49A4E /* PriceDetail.swift */; };
+		71898965290517B200F49A4E /* PriceValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898964290517B200F49A4E /* PriceValue.swift */; };
+		71898969290517F200F49A4E /* PriceValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71898968290517F200F49A4E /* PriceValueTests.swift */; };
+		7189896B29051C2800F49A4E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189896A29051C2800F49A4E /* Product.swift */; };
+		7189896E29051C9D00F49A4E /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189896D29051C9D00F49A4E /* CustomError.swift */; };
+		7189897029051CEE00F49A4E /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189896F29051CEE00F49A4E /* Products.swift */; };
+		7189897229051D4800F49A4E /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189897129051D4800F49A4E /* ProductTests.swift */; };
+		7189897429051F5200F49A4E /* ProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189897329051F5200F49A4E /* ProductsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,14 @@
 		718989592905166C00F49A4E /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 		7189895C290516B500F49A4E /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		7189895E290516C300F49A4E /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		718989622905178A00F49A4E /* PriceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetail.swift; sourceTree = "<group>"; };
+		71898964290517B200F49A4E /* PriceValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceValue.swift; sourceTree = "<group>"; };
+		71898968290517F200F49A4E /* PriceValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceValueTests.swift; sourceTree = "<group>"; };
+		7189896A29051C2800F49A4E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7189896D29051C9D00F49A4E /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		7189896F29051CEE00F49A4E /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		7189897129051D4800F49A4E /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		7189897329051F5200F49A4E /* ProductsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +126,7 @@
 		718989182905090200F49A4E /* LiquorShop */ = {
 			isa = PBXGroup;
 			children = (
+				718989602905176700F49A4E /* Common */,
 				7189891F2905090300F49A4E /* Preview Content */,
 				7189894E2905137700F49A4E /* Views */,
 				7189891D2905090300F49A4E /* Assets.xcassets */,
@@ -129,6 +146,7 @@
 		718989292905090400F49A4E /* LiquorShopTests */ = {
 			isa = PBXGroup;
 			children = (
+				71898966290517CB00F49A4E /* Common */,
 				7189892A2905090400F49A4E /* LiquorShopTests.swift */,
 			);
 			path = LiquorShopTests;
@@ -189,6 +207,52 @@
 				7189895E290516C300F49A4E /* ProductDetailViewModel.swift */,
 			);
 			path = "Product Detail";
+			sourceTree = "<group>";
+		};
+		718989602905176700F49A4E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7189896C29051C9000F49A4E /* Constants */,
+				718989612905177000F49A4E /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		718989612905177000F49A4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				718989622905178A00F49A4E /* PriceDetail.swift */,
+				71898964290517B200F49A4E /* PriceValue.swift */,
+				7189896A29051C2800F49A4E /* Product.swift */,
+				7189896F29051CEE00F49A4E /* Products.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71898966290517CB00F49A4E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71898967290517D300F49A4E /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		71898967290517D300F49A4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71898968290517F200F49A4E /* PriceValueTests.swift */,
+				7189897129051D4800F49A4E /* ProductTests.swift */,
+				7189897329051F5200F49A4E /* ProductsTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7189896C29051C9000F49A4E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7189896D29051C9D00F49A4E /* CustomError.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,8 +388,13 @@
 				71898952290514F600F49A4E /* ProductListView.swift in Sources */,
 				7189895D290516B500F49A4E /* ProductDetailView.swift in Sources */,
 				718989502905139D00F49A4E /* MainView.swift in Sources */,
+				71898965290517B200F49A4E /* PriceValue.swift in Sources */,
 				718989552905159300F49A4E /* ProductListViewModel.swift in Sources */,
+				7189896E29051C9D00F49A4E /* CustomError.swift in Sources */,
+				7189896B29051C2800F49A4E /* Product.swift in Sources */,
+				7189897029051CEE00F49A4E /* Products.swift in Sources */,
 				718989582905163400F49A4E /* FavouritesViewModel.swift in Sources */,
+				718989632905178A00F49A4E /* PriceDetail.swift in Sources */,
 				7189895A2905166C00F49A4E /* FavouritesView.swift in Sources */,
 				7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */,
 				7189895F290516C300F49A4E /* ProductDetailViewModel.swift in Sources */,
@@ -337,6 +406,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7189892B2905090400F49A4E /* LiquorShopTests.swift in Sources */,
+				7189897429051F5200F49A4E /* ProductsTests.swift in Sources */,
+				71898969290517F200F49A4E /* PriceValueTests.swift in Sources */,
+				7189897229051D4800F49A4E /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
