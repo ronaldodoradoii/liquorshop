@@ -37,6 +37,7 @@ class ProductListViewModel: ObservableObject {
         Task {
             do {
                 products = try await productListService.fetchProductList()
+                refreshProducts()
                 isLoading = false
                 errorOccured = nil
             } catch {

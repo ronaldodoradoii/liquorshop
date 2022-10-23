@@ -8,19 +8,39 @@
 import SwiftUI
 
 struct FavouritesView: View {
-    @StateObject private var viewModel: FavouritesViewModel
+    @StateObject private var viewModel: ProductListViewModel
+    let favouritesStore: FavouritesStoreProtocol
     
-    init(viewModel: FavouritesViewModel) {
+    init(viewModel: ProductListViewModel, favouritesStore: FavouritesStoreProtocol) {
         self._viewModel = StateObject(wrappedValue: viewModel)
+        self.favouritesStore = favouritesStore
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ProductListView(viewModel: viewModel,
+                         favouritesStore: favouritesStore)
     }
 }
 
+#if DEBUG
 struct FavouritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavouritesView(viewModel: FavouritesViewModel())
+        let vm = ProductListViewModelStub(products: createProducts(), favourites: ["7", "8", "9"], favouritesFilterOn: true)
+        FavouritesView(viewModel: vm, favouritesStore: FavouritesStoreStub())
+    }
+    
+    static func createProducts() -> [Product] {
+        var products = [Product]()
+        for i in 1...500 {
+            products.append(try! Product(id: "\(i)",
+                                         imageURL: "",
+                                         title: "Product \(i)",
+                                         ratingCount: 5.0,
+                                         price: [PriceDetail(message: "On sale", value: Decimal(10 + i), isOfferPrice: true)]))
+        }
+        return products
     }
 }
+#endif
+
+
