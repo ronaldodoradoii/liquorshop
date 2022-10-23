@@ -10,6 +10,8 @@
 		71823D992905268D003F3BF2 /* FavouritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71823D982905268D003F3BF2 /* FavouritesStore.swift */; };
 		71823D9B29052831003F3BF2 /* ProductListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71823D9A29052831003F3BF2 /* ProductListRow.swift */; };
 		71823D9D29052879003F3BF2 /* CustomSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71823D9C29052879003F3BF2 /* CustomSize.swift */; };
+		71823DA0290529A6003F3BF2 /* ProductListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71823D9F290529A6003F3BF2 /* ProductListViewModelTests.swift */; };
+		71823DA329052DD8003F3BF2 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 71823DA229052DD8003F3BF2 /* Nimble */; };
 		7189891A2905090200F49A4E /* LiquorShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718989192905090200F49A4E /* LiquorShopApp.swift */; };
 		7189891E2905090300F49A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7189891D2905090300F49A4E /* Assets.xcassets */; };
 		718989212905090300F49A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718989202905090300F49A4E /* Preview Assets.xcassets */; };
@@ -60,6 +62,7 @@
 		71823D982905268D003F3BF2 /* FavouritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesStore.swift; sourceTree = "<group>"; };
 		71823D9A29052831003F3BF2 /* ProductListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRow.swift; sourceTree = "<group>"; };
 		71823D9C29052879003F3BF2 /* CustomSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSize.swift; sourceTree = "<group>"; };
+		71823D9F290529A6003F3BF2 /* ProductListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelTests.swift; sourceTree = "<group>"; };
 		718989162905090200F49A4E /* LiquorShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquorShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718989192905090200F49A4E /* LiquorShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquorShopApp.swift; sourceTree = "<group>"; };
 		7189891D2905090300F49A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71823DA329052DD8003F3BF2 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +124,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71823D9E2905298B003F3BF2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				71823D9F290529A6003F3BF2 /* ProductListViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		7189890D2905090200F49A4E = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +176,7 @@
 		718989292905090400F49A4E /* LiquorShopTests */ = {
 			isa = PBXGroup;
 			children = (
+				71823D9E2905298B003F3BF2 /* ViewModels */,
 				7189897B2905213200F49A4E /* Builders */,
 				71898966290517CB00F49A4E /* Common */,
 				7189897E2905217900F49A4E /* Mocks */,
@@ -348,6 +361,9 @@
 				718989282905090400F49A4E /* PBXTargetDependency */,
 			);
 			name = LiquorShopTests;
+			packageProductDependencies = (
+				71823DA229052DD8003F3BF2 /* Nimble */,
+			);
 			productName = LiquorShopTests;
 			productReference = 718989262905090400F49A4E /* LiquorShopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -402,6 +418,9 @@
 				Base,
 			);
 			mainGroup = 7189890D2905090200F49A4E;
+			packageReferences = (
+				71823DA129052DD8003F3BF2 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 718989172905090200F49A4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -472,6 +491,7 @@
 				718989802905218600F49A4E /* MockRequestHandler.swift in Sources */,
 				7189897D2905215000F49A4E /* ProductBuilder.swift in Sources */,
 				7189892B2905090400F49A4E /* LiquorShopTests.swift in Sources */,
+				71823DA0290529A6003F3BF2 /* ProductListViewModelTests.swift in Sources */,
 				7189897429051F5200F49A4E /* ProductsTests.swift in Sources */,
 				71898969290517F200F49A4E /* PriceValueTests.swift in Sources */,
 				7189897229051D4800F49A4E /* ProductTests.swift in Sources */,
@@ -787,6 +807,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71823DA129052DD8003F3BF2 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71823DA229052DD8003F3BF2 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71823DA129052DD8003F3BF2 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7189890E2905090200F49A4E /* Project object */;
 }
