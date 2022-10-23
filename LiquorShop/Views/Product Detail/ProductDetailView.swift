@@ -35,8 +35,10 @@ struct ProductDetailView: View {
             .padding(.bottom, CustomSize.large)
             
             Text(viewModel.productTitle)
+                .font(Font.title3.weight(.semibold))
                 .padding(.bottom, CustomSize.medium)
             Text(viewModel.price)
+                .foregroundColor(.gray)
                 .padding(.bottom, CustomSize.medium)
             Text("\(NSDecimalNumber(decimal: viewModel.ratingCount))")
             Spacer()
@@ -55,7 +57,7 @@ struct ProductDetailView: View {
                 .padding(.horizontal, CustomSize.large)
                 .padding(.vertical, CustomSize.medium)
             })
-            .background(Color.orange)
+            .background(Color.blue)
             .cornerRadius(CustomSize.buttonCornerRadius)
             .frame(maxWidth: .infinity, idealHeight: 80
             )

@@ -9,6 +9,7 @@ import SwiftUI
 import URLImage
 
 struct ProductListRow: View {
+    @State private var showingAlert = false
     let title: String
     let price: String
     let imageURL: URL?
@@ -45,13 +46,27 @@ struct ProductListRow: View {
             }
             
             VStack(alignment: .leading) {
-                Text("name: \(title)")
-                Text("price: \(price)")
+                Text("\(title)")
+                    .font(Font.callout.weight(.semibold))
+                    .padding(.bottom, CustomSize.smallest)
+                Text("\(price)")
+                    .font(Font.subheadline.weight(.regular))
+                    .foregroundColor(.gray)
+                HStack {
+                    Text("Add to cart")
+                        .font(Font.footnote.weight(.regular))
+                        .foregroundColor(.blue)
+                    Image(systemName: "cart.badge.plus")
+                        .font(.system(size: CustomSize.iconAddToCart))
+                }.onTapGesture {
+                    showingAlert = true
+                }
             }
-            Spacer()
 
-            
+            Spacer()
             Image(systemName: favouriteImageName)
+                .font(.system(size: CustomSize.iconFavourite))
+                .foregroundColor(.blue)
                 .frame(width: CustomSize.iconTappableArea, height: CustomSize.iconTappableArea)
                 .contentShape(Rectangle())
                 .onTapGesture {
@@ -59,6 +74,12 @@ struct ProductListRow: View {
                 }
         }
         .padding(.horizontal, CustomSize.small)
+        .padding(.vertical, CustomSize.zero)
+        .alert("Added to cart", isPresented: $showingAlert) {
+            Button("OK") {
+                showingAlert = false
+            }
+        }
     }
 }
 

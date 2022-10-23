@@ -14,6 +14,9 @@ struct ProductListView: View {
     init(viewModel: ProductListViewModel, favouritesStore: FavouritesStoreProtocol) {
         self._viewModel = StateObject(wrappedValue: viewModel)
         self.favouritesStore = favouritesStore
+        let navBarAppearance = UINavigationBar.appearance()
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.systemBlue, .font: UIFont(name: "Arial Rounded MT Bold", size: CustomSize.navigationTitleLargeFont)!]
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.systemBlue, .font: UIFont(name: "Arial Rounded MT Bold", size: CustomSize.navigationTileFont)!]
     }
     
     var body: some View {
